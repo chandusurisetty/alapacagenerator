@@ -202,6 +202,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin:auto;
 
 }
 
@@ -213,9 +214,9 @@ body {
 
 .randdown {
     margin: auto;
-    width: 600px;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    
 }
 
 @media(max-width:800px) {
@@ -270,8 +271,5 @@ body {
         font-size: 1.3rem;
     }
 
-    .randdown {
-        width: 200px;
-        justify-content: space-around;
-    }
+    
 }
