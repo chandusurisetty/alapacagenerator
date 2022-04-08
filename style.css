@@ -33,7 +33,12 @@ body {
 .imagebar {
     position: relative;
     width: 400px;
+    min-width: 300px;
+
+
+
     height: 400px;
+    min-width: 300px;
 
 
 
@@ -77,8 +82,6 @@ body {
 
 
 }
-
-
 
 .nose {
     position: absolute;
@@ -155,8 +158,10 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 400px;
+    max-width: 400px;
+    min-width: 300px;
     justify-content: space-evenly;
+
 
 }
 
@@ -194,5 +199,79 @@ body {
     padding: .7rem 2rem;
     font-weight: bold;
     margin-right: 1rem;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.rand:hover,
+.download:hover {
+    background-color: rgb(114, 223, 24);
+    color: white;
+}
+
+.randdown {
+    margin: auto;
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media(max-width:800px) {
+    .head {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        margin: 1rem 2rem;
+    }
+
+    .imagebar {
+        width: 300px;
+        height: 300px;
+        margin-right: 2rem;
+    }
+}
+
+@media(max-width:700px) {
+    .head {
+        font-size: 2rem;
+    }
+
+    body {
+        height: auto
+    }
+
+    .styleContainer {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .imagebar {
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .stylebar {
+        margin: auto;
+    }
+
+    .namebar {
+        margin-top: 1rem;
+    }
+
+
+}
+
+@media(max-width:400px) {
+    .head {
+        font-size: 1.3rem;
+    }
+
+    .randdown {
+        width: 200px;
+        justify-content: space-around;
+    }
 }
