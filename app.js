@@ -25,9 +25,10 @@ const run = (part) => {
 
 
             let change = document.querySelector(`.${part}`)
+             change.src = `https://chandusurisetty.github.io/alapacagenerator/modals/${part}/${posters.innerHTML}.png`
 
 
-            change.src = `http://127.0.0.1:5500/modals/${part}/${posters.innerHTML}.png`
+//             change.src = `http://127.0.0.1:5500/modals/${part}/${posters.innerHTML}.png`
 
 
 
